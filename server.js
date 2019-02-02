@@ -28,7 +28,7 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
         stickerId: message.stickerId ,
         packageId: message.packageId
       })
-    } else if ( message.type === 'template'){
+    } else {
       client.replyMessage(event.replyToken, 
         {
           "type": "template",
@@ -65,13 +65,6 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
               ]
           }
         })
-    }
-
-    } else {
-      client.replyMessage(event.replyToken, {
-        type: 'text',
-        text: message.type // object message | message.text show text | message.type show type
-      })
     }
   }
 })
