@@ -35,7 +35,7 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
           "altText": "This is a buttons template",
           "template": {
               "type": "buttons",
-              "thumbnailImageUrl": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj57fbLyJzgAhUS2o8KHbpnDA4QjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fprayutofficial&psig=AOvVaw0svvSq9OoBYtzYv7s0BxKZ&ust=1549180325088689",
+              "thumbnailImageUrl": "https://pbs.twimg.com/profile_images/1084270206938099712/qR9TdPQD_400x400.jpg",
               "imageAspectRatio": "rectangle",
               "imageSize": "cover",
               "imageBackgroundColor": "#00FDFD",
@@ -48,9 +48,13 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
               },
               "actions": [
                   {
-                    "type": "postback",
-                    "label": "Buy",
-                    "data": "action=buy&itemid=123"
+                    "type": "datepicker",
+                    "label": "Select date",
+                    "data": "stroeId=12345",
+                    "mode": "datetime",
+                    "inital": "2019-02-02t00:00",
+                    "max":"2025-01-01t23:59",
+                    "min":"2019-02-02t00:00"
                   },
                   {
                     "type": "message",
