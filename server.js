@@ -35,11 +35,11 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
           "altText": "This is a buttons template",
           "template": {
               "type": "buttons",
-              "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/line/images/b/bb/2015-brown.png/revision/latest?cb=20150808131630",
+              "thumbnailImageUrl": "https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj57fbLyJzgAhUS2o8KHbpnDA4QjRx6BAgBEAU&url=https%3A%2F%2Ftwitter.com%2Fprayutofficial&psig=AOvVaw0svvSq9OoBYtzYv7s0BxKZ&ust=1549180325088689",
               "imageAspectRatio": "rectangle",
               "imageSize": "cover",
-              "imageBackgroundColor": "#FFFFFF",
-              "title": "Menu",
+              "imageBackgroundColor": "#00FDFD",
+              "title": "Kunnapat Thippayapalaphonkul",
               "text": "Please select",
               "defaultAction": {
                   "type": "uri",
@@ -55,7 +55,7 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
                   {
                     "type": "message",
                     "label": "Add to cart",
-                    "text": "no no no"
+                    "text": "WWW"
                   },
                   {
                     "type": "uri",
