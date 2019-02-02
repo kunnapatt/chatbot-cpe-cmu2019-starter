@@ -48,7 +48,7 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
               },
               "actions": [
                   {
-                    "type": "datepicker",
+                    "type": "datetimepicker",
                     "label": "Select date",
                     "data": "stroeId=12345",
                     "mode": "datetime",
@@ -57,14 +57,14 @@ app.post('/webhook', middleware(config), (req, res) => { // req = require to bot
                     "min":"2019-02-02t00:00"
                   },
                   {
-                    "type": "message",
-                    "label": "Add to cart",
-                    "text": "WWW"
+                    "type": "uri",
+                    "label": "Facebook",
+                    "uri": "https://www.facebook.com/folk.kunnapat"
                   },
                   {
                     "type": "uri",
-                    "label": "View detail",
-                    "uri": "http://google.com"
+                    "label": "CPE",
+                    "uri": "http://cpe.eng.cmu.ac.th/2013/"
                   }
               ]
           }
